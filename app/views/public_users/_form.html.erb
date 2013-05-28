@@ -1,0 +1,58 @@
+<div class="form" xmlns="http://www.w3.org/1999/html">
+  <div class="row">
+    <div class="span7 well">
+      <ul class="unstyled">
+        <li>
+          <%= f.label :first_name %>
+          <%= f.text_field :first_name %>
+        </li>
+        <li>
+          <%= f.label :last_name %>
+          <%= f.text_field :last_name %>
+        </li>
+      </ul>
+    </div>
+    <div class="span7 well">
+      <ul class="unstyled">
+        <li>
+          <%= f.label :email %>
+          <%= f.text_field :email %>
+        </li>
+        <li>
+          <%= f.label :phone %>
+          <%= f.text_field :phone %>
+        </li>
+        <li>
+          <%= f.label :address_1 %>
+          <%= f.text_field :address_1 %>
+        </li>
+        <li>
+          <%= f.label :address_2 %>
+          <%= f.text_field :address_2 %>
+        </li>
+        <li>
+          <%= f.label :town %>
+          <%= f.text_field :town %>
+        </li>
+        <li>
+          <%= f.label :county %>
+          <%= f.text_field :county %>
+        </li>
+      </ul>
+    </div>
+    <div class="span7 well">
+      <ul class="unstyled">
+        <li>
+          <%= f.label :username %>
+          <%= f.text_field :username %>
+        </li>
+        <li>
+          <%= f.label :user_password %>
+          <%= f.password_field :user_password %>
+          <p> The password must be between 6 and 20 characters</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+

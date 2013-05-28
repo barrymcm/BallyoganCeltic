@@ -1,0 +1,56 @@
+<%- model_class = Player -%>
+<% if flash[:notice] %>
+    <%= flash[:notice] %>
+<% end %>
+
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:first_name) %></th>
+      <th><%= model_class.human_attribute_name(:last_name) %></th>
+      <th><%= model_class.human_attribute_name(:dob) %></th>
+      <th><%= model_class.human_attribute_name(:position) %></th>
+      <th><%= model_class.human_attribute_name(:squad_number) %></th>
+      <th><%= model_class.human_attribute_name(:phone) %></th>
+      <th><%= model_class.human_attribute_name(:email) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @players.each do |player| %>
+      <tr>
+        <td><%= player.first_name %></td>
+        <td><%= player.last_name %></td>
+        <td><%= player.dob %></td>
+        <td><%= player.position %></td>
+        <td><%= player.squad_number %></td>
+        <td><%= player.phone %></td>
+        <td><%= player.email %></td>
+        <td>
+          <%= link_to t('.show', :default => t("helpers.links.show")),
+                      player_path(player),
+                      :position => session[:position], :class => 'btn btn-mini' %>
+        </td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_player_path(player),
+                      :position => session[:position], :class => 'btn btn-mini' %>
+        </td>
+        <td>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      player_path(player),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_player_path,
+            :class => 'btn btn-primary' %>

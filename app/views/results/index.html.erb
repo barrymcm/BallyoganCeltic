@@ -1,0 +1,37 @@
+<h1>Listing results</h1>
+
+<table>
+  <tr>
+    <th>League</th>
+    <th>Location</th>
+    <th>Date</th>
+    <th>Home team</th>
+    <th>Away team</th>
+    <th>Home score</th>
+    <th>Away score</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @results.each do |result| %>
+  <tr>
+    <td><%= result.league_id %></td>
+    <td><%= result.location %></td>
+    <td><%= result.date %></td>
+    <td><%= result.home_team %></td>
+    <td><%= result.away_team %></td>
+    <td><%= result.home_score %></td>
+    <td><%= result.away_score %></td>
+    <td><%= link_to 'Show', result %></td>
+    <td><%= link_to 'Edit', edit_result_path(result) %></td>
+    <td><%= link_to 'Destroy', result, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Result', new_result_path %>
+<br/>
+<%= link_to '<<< Back to Admin Menu', controller: :access, action: :admin_menu %>

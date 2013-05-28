@@ -1,0 +1,31 @@
+<% if @sponsor %>
+    <%= render('shared/register_navbar') %>
+<% end %>
+<h2>New sponsor application form</h2><br/>
+<%= form_for(@sponsor, url: {action: :create}) do |f| %>
+    <% if @sponsor.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@sponsor.errors.count, "error") %> prohibited this sponsor from being saved:</h2>
+          <ul>
+            <% @sponsor.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+    <div class="row">
+      <%= render :partial => 'shared/sponsors_info' %>
+      <%= render :partial => 'form', :locals => {:f => f} %>
+      <div class="span5 well pull-right">
+        <%= f.submit 'Submit', :class => "btn btn-primary" %>
+<% end %>
+<% unless @sponsor.blank? %>
+    <a class="btn" <%= link_to 'Cancel', controller: :public_site, action: :home %>
+<% else %>
+    <a class="btn" <%= link_to 'Cancel', action: :show, :id => @sponsor.id %>
+<% end %>
+
+<% if @admin_user %>
+    <%= link_to 'Cancel', controller: :admin_users, action: :admin_menu,
+                :id => @admin_user.id %>
+<% end %>

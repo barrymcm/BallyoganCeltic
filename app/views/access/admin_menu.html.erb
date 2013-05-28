@@ -1,0 +1,11 @@
+<%
+   # These variables are set in def admin_menu
+   # in the access controller
+%>
+
+<%= render 'admin_menu', :locals => {:admin_expenses => @admin_expenses} if @admin_permission %>
+
+<%= render 'manager_menu', :locals => {:admin_expenses => @admin_expenses} if @manager_permission %>
+
+<%= render 'superuser_menu' if @super_user %>
+

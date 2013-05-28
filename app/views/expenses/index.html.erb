@@ -1,0 +1,38 @@
+<% if flash[:notice] %>
+    <%= flash[:notice] %>
+<% end %>
+<h1>Listing expenses</h1>
+
+<table>
+  <tr>
+    <th>Admin user</th>
+    <th>Category</th>
+    <th>Description</th>
+    <th>Supplier</th>
+    <th>Amount</th>
+    <th>Purchase date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @expenses.each do |expense| %>
+  <tr>
+    <td><%= expense.admin_user_id %></td>
+    <td><%= expense.category %></td>
+    <td><%= expense.description %></td>
+    <td><%= expense.supplier %></td>
+    <td><%= expense.amount %></td>
+    <td><%= expense.purchase_date.strftime("%a %d %B") %></td>
+    <td><%= link_to 'Show', expense, :id => @admin_user.id, :position => @admin_user.position %></td>
+    <td><%= link_to 'Edit', edit_expense_path(expense) %></td>
+    <td><%= link_to 'Destroy', expense, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Expense', controller: :expenses, action: :new,
+            :id => @admin.id, :position => @admin.position %>
+

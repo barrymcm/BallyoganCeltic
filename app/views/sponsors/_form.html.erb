@@ -1,0 +1,63 @@
+<%= form_for(@sponsor) do |f| %>
+    <% if @sponsor.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@sponsor.errors.count, "error") %> prohibited this sponsor from being saved:</h2>
+          <ul>
+            <% @sponsor.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+<div class="form" xmlns="http://www.w3.org/1999/html">
+  <div class="row">
+    <div class="span5 well pull-right">
+      <ul class="unstyled">
+        <li>
+          <%= f.label :company_name %>
+          <%= f.text_field :company_name %>
+        </li>
+        <li>
+          <%= f.label :location %>
+          <%= f.text_field :location %>
+        </li>
+      </ul>
+    </div>
+    <div class="span5 well pull-right">
+      <ul class="unstyled">
+        <li>
+          <%= f.label :first_name %>
+          <%= f.text_field :first_name %>
+        </li>
+        <li>
+          <%= f.label :last_name %>
+          <%= f.text_field :last_name %>
+        </li>
+        <li>
+          <%= f.label :title %>
+          <%= f.text_field :title %>
+        </li>
+      </ul>
+    </div>
+    <div class="span5 well pull-right">
+      <ul class="unstyled">
+        <li>
+          <%= f.label :email %>
+          <%= f.text_field :email %>
+        </li>
+        <li>
+          <%= f.label :phone %>
+          <%= f.number_field :phone %>
+        </li>
+        <li>
+          <%= f.label :package %>
+          <%= f.text_field :package %>
+        </li>
+      </ul>
+      <div>
+      <%= f.submit :class => "btn btn-warning pull-right" if @admin_user %>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>

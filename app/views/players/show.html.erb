@@ -1,0 +1,49 @@
+<%- model_class = Player -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:team_id) %>:</strong></dt>
+  <dd><%= @player.team_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:first_name) %>:</strong></dt>
+  <dd><%= @player.first_name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:last_name) %>:</strong></dt>
+  <dd><%= @player.last_name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:dob) %>:</strong></dt>
+  <dd><%= @player.dob %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:position) %>:</strong></dt>
+  <dd><%= @player.position %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:squad_number) %>:</strong></dt>
+  <dd><%= @player.squad_number %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:goals) %>:</strong></dt>
+  <dd><%= @player.goals %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:played) %>:</strong></dt>
+  <dd><%= @player.played %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:red_cards) %>:</strong></dt>
+  <dd><%= @player.red_cards %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:yellow_cards) %>:</strong></dt>
+  <dd><%= @player.yellow_cards %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
+  <dd><%= @player.description %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:achievements) %>:</strong></dt>
+  <dd><%= @player.achievements %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:image_url) %>:</strong></dt>
+  <dd><%= @player.image_url %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:phone) %>:</strong></dt>
+  <dd><%= @player.phone %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
+  <dd><%= @player.email %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              players_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_player_path(@player), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              player_path(@player),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

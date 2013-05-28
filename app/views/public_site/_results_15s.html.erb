@@ -1,0 +1,27 @@
+<% @results_15s.last(1).each do |result| %>
+    <div class="last_result table-condensed">
+      <table class="fixtures table table-striped table-bordered">
+        <thead>
+        <tr>
+          <th colspan="4"><h5 class="text-success">Last Result</h5></th>
+        </tr>
+        <tr>
+          <td colspan="4"><%= result.date.strftime("%a %d %B, %I:%M %p") %></td>
+        </tr>
+        <tr>
+          <td>Home Team</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>Away Team</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><%= result.home_team %></td>
+          <td><%= result.home_score %></td>
+          <td><%= result.away_score %></td>
+          <td><%= result.away_team %></td>
+        </tr>
+      </table>
+    </div>
+<% end %>
