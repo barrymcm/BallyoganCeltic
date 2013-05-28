@@ -1,0 +1,37 @@
+<h1>Listing managers</h1>
+
+<table class="managers">
+  <tr>
+    <th>Team</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Image</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Description</th>
+    <th>Achievements</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @managers.each do |manager| %>
+  <tr>
+    <td><%= manager.team_id %></td>
+    <td><%= manager.first_name %></td>
+    <td><%= manager.last_name %></td>
+    <td><%= image_tag(manager.image_url, :class => "img-polaroid") %></td>
+    <td><%= manager.email %></td>
+    <td><%= manager.phone %></td>
+    <td><%= manager.description %></td>
+    <td><%= manager.achievements %></td>
+    <td><%= link_to 'Show', manager %></td>
+    <td><%= link_to 'Edit', edit_manager_path(manager) %></td>
+    <td><%= link_to 'Destroy', manager, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Manager', new_manager_path %>

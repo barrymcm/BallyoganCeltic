@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @public_user.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @public_user.last_name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @public_user.email %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @public_user.phone %>
+</p>
+
+<p>
+  <b>Address 1:</b>
+  <%= @public_user.address_1 %>
+</p>
+
+<p>
+  <b>Address 2:</b>
+  <%= @public_user.address_2 %>
+</p>
+
+<p>
+  <b>Town:</b>
+  <%= @public_user.town %>
+</p>
+
+<p>
+  <b>County:</b>
+  <%= @public_user.county %>
+</p>
+
+<%= link_to "Back", controller: :public_users, action: :index, :id => @admin_user.id %>
+

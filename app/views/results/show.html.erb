@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>League:</b>
+  <%= @result.league_id %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @result.location %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @result.date %>
+</p>
+
+<p>
+  <b>Home team:</b>
+  <%= @result.home_team %>
+</p>
+
+<p>
+  <b>Away team:</b>
+  <%= @result.away_team %>
+</p>
+
+<p>
+  <b>Home score:</b>
+  <%= @result.home_score %>
+</p>
+
+<p>
+  <b>Away score:</b>
+  <%= @result.away_score %>
+</p>
+
+
+<%= link_to 'Edit', edit_result_path(@result) %> |
+<%= link_to 'Back', results_path %>

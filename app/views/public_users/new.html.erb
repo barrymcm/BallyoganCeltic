@@ -1,0 +1,34 @@
+<% if @public_user %>
+    <%= render('shared/register_navbar') %>
+<% end %>
+<h2>Create new account</h2>
+<%= form_for(@public_user, url: {action: :create}) do |f| %>
+    <% if @public_user.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@public_user.errors.count, "error") %> prohibited this public_user from being saved:</h2>
+          <ul>
+            <% @public_user.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+    <%= render :partial => 'form', :locals => {:f => f} %>
+    <div class="row">
+      <div class="span4">
+        <%= f.submit 'Submit', :class => "btn btn-primary" %>
+<% end %>
+<% unless @public_user.blank? %>
+    <a class="btn" <%= link_to 'Cancel', controller: :public_site, action: :home %>
+<% else %>
+    <a class="btn" <%= link_to 'Cancel', action: :show, :id => @public_user.id %>
+<% end %>
+
+<% if @admin_user %>
+    <%= link_to 'Cancel', controller: :admin_users, action: :admin_menu,
+                :id => @admin_user.id %>
+<% end %>
+</div>
+</div>
+
+

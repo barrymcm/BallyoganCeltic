@@ -1,0 +1,9 @@
+<% if @league.blank? && @page_title != 'Fixtures' %>
+    <div class="row well span4 clear"><h4>Senior Team <%= @page_title %></h4></div>
+<% elsif @page_title == 'Fixtures' && @league.blank? %>
+    <div class="row well span4 clear"><h4>All <%= @page_title %></h4></div>
+<% elsif @page_title == 'Fixtures' && @league %>
+    <div class="row well span4 clear"><h4><%= @league.title %> <%= @page_title %></h4></div>
+<% else %>
+    <div class="row well span4 clear"><h4><%= @league.title %> <%= @page_title %></h4></div>
+<% end %>

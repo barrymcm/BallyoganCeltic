@@ -1,0 +1,57 @@
+<% @page_title = "League Table"  %>
+<%= render('shared/nav_leagues') %>
+<!-- Renders the title of the league to the user -->
+<%= render(partial: 'league_title') %>
+<!-- Lets the user know if there are no results -->
+<% if @clubs.blank? %>
+    <div class="span4 well"><h3>There are no results yet</h3></div>
+<% else %>
+    <div class="fixtures table-condensed">
+      <table class="table table-striped table-bordered pull-left">
+        <thead>
+        <tr>
+          <th>Position</th>
+          <th>Club</th>
+          <th>Played</th>
+          <th>W</th>
+          <th>L</th>
+          <th>D</th>
+          <th>GF</th>
+          <th>GA</th>
+          <th>GD</th>
+          <th>Pts</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% position = [] %>
+        <% @clubs.each do |club| %>
+            <% position << club %>
+            <% if club.name.to_s == "Ballyogan Celtic" and position.count == 1 %>
+                <tr class="warning">
+            <% elsif club.name.to_s == "Ballyogan Celtic" and position.count > 1 %>
+                <tr class="info">
+            <% end %>
+            <!-- Need to sort the positions by the highest points -->
+            <td><%= position.count %></td>
+            <td><%= club.name %></td>
+            <td><%= club.played %></td>
+            <td><%= club.won %></td>
+            <td><%= club.lost %></td>
+            <td><%= club.drawn %></td>
+            <td><%= club.goals_for %></td>
+            <td><%= club.goals_against %></td>
+            <td><%= club.goals_for - club.goals_against %></td>
+            <%
+               wins = club.won
+               wins = wins * 3
+               draws = club.drawn
+               draws = draws * 1
+               points = wins + draws
+            %>
+            <td><%= points %></td>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+<% end %>

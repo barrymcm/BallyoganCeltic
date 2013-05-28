@@ -1,0 +1,51 @@
+<% if @super_user %>
+    <h1>Admin Menu</h1>
+    <div class="row well">
+      <%=  render :partial => "notices" %>
+      <div class="span4 admin_menu">
+        <fieldset>
+          <legend>Admin Panel</legend>
+          <ul class="unstyled">
+            <%
+               # The position and id of the user is passed as a parameter in the url so we can
+               # keep track of who they are in the admin area so we can control their privileges.
+               # These values are set in the def admin_menu function in the access controller
+            %>
+            <li><a class="btn btn-info"<%= link_to 'Manage Admin Users', controller: :admin_users, action: :index,
+                                                   :id => @admin_user.id, :position => @admin_user.position %></li>
+            <li><a class="btn default"<%= link_to 'Manage Expenses', controller: :expenses, action: :index,
+                                                  :id => @admin_user.id, :position => @admin_user.position %></li>
+            <li><a class="btn default"<%= link_to 'Manage Registered Users', controller: :public_users, action: :index,
+                                                  :id => @admin_user.id, :position => @admin_user.position %></li>
+            <li><a class="btn default"<%= link_to 'Manage Managers', controller: :managers, action: :index,
+                                                  :id => @admin_user.id, :position => @admin_user.position %></li>
+            <li class="pull-right"><a class="btn btn-warning"<%= link_to 'Log out', action: :logout %></li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="span4 well">Updates</div>
+    </div>
+    <div class="row well">
+      <div class="span4 admin_menu">
+        <fieldset>
+          <legend>Managers Panel</legend>
+          <ul class="unstyled">
+            <li><a class="btn default"<%= link_to 'Manage Players', controller: :players, action: :index,
+                                                  :id => @admin_user.id, :position => @admin_user.position %></li>
+            <li><a class="btn default"<%= link_to 'Manage BCFC Teams', controller: :teams, action: :index,
+                                                  :id => @admin_user.id, :position => @admin_user.position %></li>
+            <li><a class="btn default"<%= link_to 'Manage Results', controller: :results, action: :index,
+                                                  :id => @admin_user.id, :position => @admin_user.position %></li>
+            <li><a class="btn default"<%= link_to 'Manage Fixtures', controller: :fixtures, action: :index,
+                                                  :id => @admin_user.id, :position => @admin_user.position %></li>
+            <li><a class="btn default"<%= link_to 'Manage Leagues', controller: :leagues, action: :index,
+                                                  :id => @admin_user.id, :position => @admin_user.position %></li>
+            <li><a class="btn default"<%= link_to 'Manage Clubs', controller: :clubs, action: :index,
+                                                  :id => @admin_user.id, :position => @admin_user.position %></li>
+            <li class="pull-right"><a class="btn btn-warning"<%= link_to 'Log out', action: :logout %></li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="span4 well">Updates</div>
+    </div>
+<% end %>

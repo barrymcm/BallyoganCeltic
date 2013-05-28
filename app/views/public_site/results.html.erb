@@ -1,0 +1,29 @@
+<% @page_title = 'Results' %>
+<%= render(partial: 'shared/nav_results') %>
+<!-- Renders the title of the league to the user -->
+<%= render(partial: 'league_title') %>
+<div class="table-condensed">
+  <table class="fixtures table table-striped table-bordered pull-left">
+    <thead>
+    <tr>
+      <th colspan="4"><h5 class="text-success">Results</h5></th>
+      <th><h5 class="text-success">Home</h5></th>
+      <th></th>
+      <th></th>
+      <th><h5 class="text-success">Away</h5></th>
+    </tr>
+    </thead>
+    <% @results.each do |result| %>
+    <tbody>
+    <tr>
+       <td colspan="4"><%= result.date.strftime("%a %d %B") %></td>
+       <td><%= result.home_team %></td>
+       <td><%= result.home_score %></td>
+       <td><%= result.away_score %></td>
+       <td><%= result.away_team %></td>
+    </tr>
+    <% end %>
+  </table>
+</div>
+
+

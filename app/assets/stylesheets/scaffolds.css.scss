@@ -1,0 +1,253 @@
+/* scaffold stylesheet
+
+    Custom styles included in this file
+*/
+
+body {
+  background-color: #fbfff4;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+}
+#wrapper{
+  height: 100%;
+  margin: 0 auto 0%;
+}
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+h4{
+  color: #228b22;
+}
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: green;
+  &:visited {
+    /*color: #e7e7e7;*/
+  }
+  &:hover {
+    color: #fff;
+  }
+}
+table a:hover {
+  color: #006400;
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: #ff4358;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.muted {
+  color: #999;
+}
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+.clear{
+  clear: both;
+  margin: 0 auto 15px;
+}
+#footer{
+  height: 50px;
+  background-color: #eeeeee;
+  padding: 30px 0;
+  border-top: 1px solid #e5e5e5;
+  background-color: #f5f5f5;
+  width: 100%;
+}
+.navbar-inner{
+  width: 100%;
+}
+.last_result{
+  max-width: 300px;
+  float: right;
+}
+.next_fixture{
+  text-align: centre;
+  max-width: 300px;
+  float: left;
+}
+.fixtures th{
+  color: green;
+  background-color: #dff0d8;
+}
+table tr td{
+  text-align: centre;
+  border: none;
+}
+.next_fixture h5{
+  color: green;
+}
+.fixtures th{
+  color: green;
+  background-color: #dff0d8;
+}
+.fixtures table th{
+  text-align: centre;
+}
+span{
+  font-weight: bold;
+}
+.accordion-heading{
+  background-color: #f5f5f5;
+}
+a.hover accordion-heading{
+  background-color: #e5e5e5;
+}
+.pub_login input{
+  width: 125px;
+}
+.tab-pane table tr th {
+  background-color: #dff0d8;
+}
+fieldset{
+  border-color: green;
+}
+.form ul li{
+  list-style: none;
+  margin-bottom: 1em;
+}
+.form label{
+  float: left;
+  width: 10em;
+}
+.admin_menu ul li{
+  margin-bottom: 1em;
+
+}
+.text-success td{
+  font-weight: bold;
+  text-align: center;
+}
+.fixtures th{
+  text-align: center;
+}
+.modal-header thead {
+  background-color: #fbfff4;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+a.hover table td{
+  color: blue;
+}
+
+// -- Not being used -- //
+
+#info_container{
+  display: none;
+  z-index: 40001;
+}
+#background_overlay{
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  z-index: 40001;
+  position: fixed;
+  opacity: .5; /* Sets opacity so it's partly transparent */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE transparency */
+  filter: alpha(opacity=50); /* More IE transparency */
+}
+#info_wrapper{
+  position:fixed;
+  top:30%;
+  width:100%;
+  z-index:40002;
+}
+.info_box{
+  width: 350px;
+  height: 350px;
+  background-color: #add8e6;
+  position: relative;
+  top: 50px;
+  left: 600px;
+  z-index:40005;
+}
+.nav-tabs>.active>a,.nav-tabs>.active>a:hover,.nav-tabs>.active>a:focus{color:#fff;background-color:#228b22;border:1px solid green;border-bottom-color:transparent;cursor:default;}
+.nav-pills>.active>a,.nav-pills>.active>a:hover,.nav-pills>.active>a:focus{color:#ffffff;background-color:#dff0d8;}
+.nav > li > a:hover,.nav > li > a:focus {text-decoration: none;background-color: #228b22;}
+.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+  color: #228b22;
+  background-color: #dff0d8;
+  font-weight: bold;
+}
+.hero-unit {
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+  background-image: url("hero_banner.jpg");
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+h2{
+  color: #fff;
+}
+.banner-text{
+  color: #fff;
+}
+
+
+

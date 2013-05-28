@@ -1,0 +1,35 @@
+<!-- :page_id, @pages.collect {|p| [ p.name, p.id ] } -->
+<% @page_title = 'Match Fixtures' %>
+<%= render('shared/nav_fixtures') %>
+<!-- Renders the title of the league to the user -->
+<%= render(partial: 'league_title') %>
+<!-- Displays the fixtures tables -->
+  <table class="fixtures table table-striped table-bordered">
+    <thead>
+    <tr>
+      <th colspan="4"><h5 class="text-success">Date</h5></th>
+      <th><h5 class="text-success">Location</h5></th>
+      <th><h5 class="text-success">Team</h5></th>
+      <th><h5 class="text-success">Home</h5></th>
+      <th><h5 class="text-success">Away</h5></th>
+    </tr>
+    </thead>
+    <% @fixtures.each do |fixture| %>
+        <tbody>
+        <tr>
+          <td colspan="4"><%= fixture.date.strftime("%a %d %B") %></td>
+          <td><%= fixture.location %></td>
+          <td>
+            <%= "Senior Team" if fixture.league_id == 0 %>
+            <%= "Under 17's" if fixture.league_id == 1 %>
+            <%= "Under 15's" if fixture.league_id == 2 %>
+            <%= "Under 12's" if fixture.league_id == 3 %>
+          </td>
+          <td><%= fixture.home_team %></td>
+          <td><%= fixture.away_team %></td>
+        </tr>
+    <% end %>
+  </table>
+<div id="span8">
+  <%= gmaps4rails(@json) %>
+</div>

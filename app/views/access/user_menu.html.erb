@@ -1,0 +1,10 @@
+<h2>User Menu</h2>
+<!-- security flaw here -->
+<ul class="unstyled">
+  <li><%= link_to "Post a comment" %> </li>
+  <li><%= link_to 'Update my profile', controller: :public_users, action: :edit,
+                  :id => @public_user.id, :public_user => @public_user.public_user %></li>
+</ul>
+<div>
+  <a class="btn" <%= link_to 'Logout', action: :logout %>
+</div>

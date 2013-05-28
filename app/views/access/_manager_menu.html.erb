@@ -1,0 +1,29 @@
+<% admin_expenses ||= [] %>
+<div class="row well">
+    <%= render :partial => "notices", :locals => {:admin_expenses => admin_expenses} %>
+  <div class="span4 admin_menu">
+    <fieldset>
+      <legend>Managers Panel</legend>
+      <ul class="unstyled">
+        <li><a class="btn default"<%= link_to 'Manage Players', controller: :players, action: :index,
+                                              :id => @admin_user.id, :position => @admin_user.position %></li>
+        <li><a class="btn default"<%= link_to 'Manage BCFC Teams', controller: :teams, action: :index,
+                                              :id => @admin_user.id, :position => @admin_user.position %></li>
+        <li><a class="btn default"<%= link_to 'Manage Results', controller: :results, action: :index,
+                                              :id => @admin_user.id, :position => @admin_user.position %></li>
+        <li><a class="btn default"<%= link_to 'Manage Fixtures', controller: :fixtures, action: :index,
+                                              :id => @admin_user.id, :position => @admin_user.position %></li>
+        <li><a class="btn default"<%= link_to 'Manage Leagues', controller: :leagues, action: :index,
+                                              :id => @admin_user.id, :position => @admin_user.position %></li>
+        <li><a class="btn default"<%= link_to 'Manage Clubs', controller: :clubs, action: :index,
+                                              :id => @admin_user.id, :position => @admin_user.position %></li>
+        <li><a class="btn default"<%= link_to 'Manage Training', controller: :training_sessions, action: :index,
+                                              :id => @admin_user.id, :position => @admin_user.position %></li>
+        <li><a class="btn default"<%= link_to 'Manage Map Locations', controller: :locations, action: :index,
+                                              :id => @admin_user.id, :position => @admin_user.position %></li>
+        <li><a class="btn default"<%= link_to 'Manage Expenses', controller: :expenses, action: :index,
+                                              :id => @admin_user.id, :position => @admin_user.position %></li>
+      </ul>
+    </fieldset>
+  </div>
+</div>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @public_title %></title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+  <![endif]-->
+</head>
+<body>
+<%= render(partial: "shared/modal", :locals => {:contacts => @contacts}) %>
+<div id="fb-root"></div>
+<!-- ====================================== Wraps Main Content -->
+<div id="wrapper">
+  <!-- ====================================== Contains Page Columns -->
+  <div class="row">
+    <!-- ====================================== Contains Fixed Header Bar -->
+    <%= render(partial: 'shared/public_navbar', :locals => {:admin_users => @admin_users} ) %>
+    <!-- ====================================== End of Nav Bar - Fixed Top-->
+    <div class="container">
+      <div class="row">
+        <!--Team Cite -->
+        <div class="span9">
+          <blockquote class="pull-right">
+            <p>Individual commitment to a group effort -
+              that is what makes a team work.
+              <small><cite class="source-title">Vince Lombardi</cite></small>
+            </p>
+          </blockquote>
+          <!--Team Cite -->
+        </div>
+        <div class="span9">
+          <%= yield %>
+        </div>
+        <!--====================================== End of Custom Page Content  -->
+        <div class="span3 pull-right">
+          <div class="span2 well">
+            <%= render(:partial => 'public_user_login') %>
+          </div>
+          <div class="span2 well">
+            <h4>Twitter Feed</h4>
+            <p>
+              <a class="twitter-timeline"
+                 href="https://twitter.com/BallyoganCeltic"
+                 data-widget-id="338024191498534912"
+                 height="350"
+                 data-border-color="#228b22"
+              >
+              Tweets by @BallyoganCeltic
+              </a>
+            </p>
+          </div>
+          <div class="span2 well">
+            <h4>New Samuel Beckket Center</h4>
+
+            <p> This is where we could have club news
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="span2 well">
+            <h4>Club News</h4>
+
+            <p> This is where we could have club news
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="span2 well">
+            <h4>Club News</h4>
+
+            <p> This is where we could have club news
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--====================================== end of row container -->
+    </div>
+  </div>
+  <div class="clear"></div>
+  <!--====================================== End of Wrapper -->
+</div>
+<!--====================================== Start of Footer -->
+<div id=footer>
+  <div class="container">
+    <p>Web Design <a href="#">Barry Mc Mahon</a>.</p>
+  </div>
+</div>
+<!--====================================== End of Footer -->
+<%= yield :scripts %>
+</body>
+</html>
