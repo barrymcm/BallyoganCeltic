@@ -25,81 +25,19 @@
     <splitter split-orientation="horizontal" split-proportion="0.4996232">
       <split-first>
         <leaf>
-          <file leaf-file-name="_notices.html.erb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="_notices.html.erb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/access/_notices.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="73" selection-start="741" selection-end="741" vertical-scroll-proportion="-14.25">
-                  <folding>
-                    <marker date="1369256716000" expanded="true" signature="79:739" placeholder="..." />
-                    <marker date="1369256716000" expanded="true" signature="151:732" placeholder="..." />
-                    <marker date="1369256716000" expanded="true" signature="163:724" placeholder="..." />
-                    <marker date="1369256716000" expanded="true" signature="172:260" placeholder="..." />
-                    <marker date="1369256716000" expanded="true" signature="290:717" placeholder="do ... end" />
-                    <marker date="1369256716000" expanded="true" signature="317:705" placeholder="..." />
-                    <marker date="1369256716000" expanded="true" signature="549:691" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="public_users_controller.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/controllers/public_users_controller.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="25" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
+                <state line="21" column="73" selection-start="741" selection-end="741" vertical-scroll-proportion="0.49565217">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Gemfile">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="37" column="10" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Gemfile.lock" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="136" column="23" selection-start="3039" selection-end="3039" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="20130325144855_create_clubs.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/db/migrate/20130325144855_create_clubs.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="7" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="20130528135837_change_achievements_to_limit_string.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/db/migrate/20130528135837_change_achievements_to_limit_string.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="22" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="20130528135250_change_achievements_to_limit_nil.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/db/migrate/20130528135250_change_achievements_to_limit_nil.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="28" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/db/schema.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="38" column="29" selection-start="1701" selection-end="1717" vertical-scroll-proportion="-0.3220339">
+                <state line="38" column="2" selection-start="1674" selection-end="1717" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -109,10 +47,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="admin_menu.html.erb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="admin_menu.html.erb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/access/admin_menu.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="6" selection-start="331" selection-end="331" vertical-scroll-proportion="0.25962734">
+                <state line="11" column="1" selection-start="331" selection-end="331" vertical-scroll-proportion="0.25962734">
                   <folding />
                 </state>
               </provider>
@@ -142,10 +80,10 @@
         <option value="$PROJECT_DIR$/app/controllers/results_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/training_sessions_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/Gemfile.lock" />
         <option value="$PROJECT_DIR$/db/migrate/20130528135250_change_achievements_to_limit_nil.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130325144855_create_clubs.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130528135837_change_achievements_to_limit_string.rb" />
+        <option value="$PROJECT_DIR$/Gemfile.lock" />
       </list>
     </option>
   </component>
@@ -620,14 +558,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="16" y="26" width="1884" height="970" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28980526" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11969532" sideWeight="0.6701031" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15832427" sideWeight="0.6701031" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15832427" sideWeight="0.6701031" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -695,41 +633,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/public_users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="10" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="23" selection-start="3039" selection-end="3039" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130415193204_create_training_sessions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130515183404_create_locations.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130516145946_add_logo_to_locations.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -772,13 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130528135250_change_achievements_to_limit_nil.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130325144855_create_clubs.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="7" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
@@ -786,23 +682,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130528135837_change_achievements_to_limit_string.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/access/admin_menu.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
+        <state line="11" column="1" selection-start="331" selection-end="331" vertical-scroll-proportion="0.25962734">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="29" selection-start="1701" selection-end="1717" vertical-scroll-proportion="-0.3220339">
+        <state line="38" column="2" selection-start="1674" selection-end="1717" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/access/admin_menu.html.erb">
+    <entry file="file://$PROJECT_DIR$/config.ru">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="6" selection-start="331" selection-end="331" vertical-scroll-proportion="0.25962734">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="29" selection-start="2396" selection-end="2396" vertical-scroll-proportion="0.22051282">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="10" selection-start="715" selection-end="715" vertical-scroll-proportion="0.916558">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/public_users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="25" selection-start="309" selection-end="309" vertical-scroll-proportion="0.20402685">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130528135837_change_achievements_to_limit_string.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="22" selection-start="197" selection-end="197" vertical-scroll-proportion="0.20752427">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130528135250_change_achievements_to_limit_nil.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="27" selection-start="97" selection-end="118" vertical-scroll-proportion="0.046116505">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/access/_notices.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="73" selection-start="741" selection-end="741" vertical-scroll-proportion="0.49565217">
           <folding />
         </state>
       </provider>
