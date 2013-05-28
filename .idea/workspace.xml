@@ -96,10 +96,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="schema.rb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/db/schema.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="42" column="45" selection-start="1848" selection-end="1848" vertical-scroll-proportion="0.66883963">
+                <state line="38" column="29" selection-start="1701" selection-end="1717" vertical-scroll-proportion="-0.3220339">
                   <folding />
                 </state>
               </provider>
@@ -109,10 +109,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="admin_menu.html.erb" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="admin_menu.html.erb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/access/admin_menu.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="51" selection-start="88" selection-end="135" vertical-scroll-proportion="0.11801242">
+                <state line="11" column="6" selection-start="331" selection-end="331" vertical-scroll-proportion="0.25962734">
                   <folding />
                 </state>
               </provider>
@@ -695,13 +695,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/access/admin_menu.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="51" selection-start="88" selection-end="135" vertical-scroll-proportion="0.11801242">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/public_users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="25" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
@@ -802,7 +795,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="45" selection-start="1848" selection-end="1848" vertical-scroll-proportion="0.66883963">
+        <state line="38" column="29" selection-start="1701" selection-end="1717" vertical-scroll-proportion="-0.3220339">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/access/admin_menu.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="6" selection-start="331" selection-end="331" vertical-scroll-proportion="0.25962734">
           <folding />
         </state>
       </provider>
