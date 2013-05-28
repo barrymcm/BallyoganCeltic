@@ -9,11 +9,10 @@ class CreateClubs < ActiveRecord::Migration
       t.integer :drawn
       t.integer :goals_for
       t.integer :goals_against
-      t.text :achievements, :limit => 225
+      t.text :achievements,  :limit => 225
 
       t.timestamps
     end
-
     add_index :clubs, :league_id
   end
 end
