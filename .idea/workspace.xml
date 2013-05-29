@@ -71,10 +71,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="20130528135250_change_achievements_to_limit_nil.rb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="20130528135250_change_achievements_to_limit_nil.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/db/migrate/20130528135250_change_achievements_to_limit_nil.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="27" selection-start="97" selection-end="118" vertical-scroll-proportion="0.0">
+                <state line="8" column="44" selection-start="147" selection-end="147" vertical-scroll-proportion="0.1948718">
                   <folding />
                 </state>
               </provider>
@@ -83,16 +83,16 @@
           <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/db/schema.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="51" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0">
+                <state line="22" column="46" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/db/seeds.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="519" column="41" selection-start="16126" selection-end="16126" vertical-scroll-proportion="0.7692308">
+                <state line="519" column="41" selection-start="16126" selection-end="16126" vertical-scroll-proportion="-21.923077">
                   <folding />
                 </state>
               </provider>
@@ -102,7 +102,19 @@
             <entry file="file://$PROJECT_DIR$/app/views/admin_users/_form.html.erb">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="17.714285">
-                  <folding />
+                  <folding>
+                    <marker date="1364487749000" expanded="true" signature="108:394" placeholder="..." />
+                    <marker date="1364487749000" expanded="true" signature="240:379" placeholder="..." />
+                    <marker date="1364487749000" expanded="true" signature="433:527" placeholder="..." />
+                    <marker date="1364487749000" expanded="true" signature="551:643" placeholder="..." />
+                    <marker date="1364487749000" expanded="true" signature="667:757" placeholder="..." />
+                    <marker date="1364487749000" expanded="true" signature="781:1325" placeholder="..." />
+                    <marker date="1364487749000" expanded="true" signature="878:962" placeholder="..." />
+                    <marker date="1364487749000" expanded="true" signature="986:1070" placeholder="..." />
+                    <marker date="1364487749000" expanded="true" signature="1096:1314" placeholder="..." />
+                    <marker date="1364487749000" expanded="true" signature="1349:1466" placeholder="..." />
+                    <marker date="1364487749000" expanded="true" signature="1492:1525" placeholder="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -129,10 +141,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="..admin_users" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="..admin_users" pinned="false" current="false" current-in-tab="false">
             <entry file="dbDummy://dbElement:/7fcaacbd/9af168f7-4b55-4830-b9aa-dc176fe6b4fc/..admin_users">
               <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
                 <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="20130529104949_change_adminusers_salt_to_limit_64.rb" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/db/migrate/20130529104949_change_adminusers_salt_to_limit_64.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="2" column="60" selection-start="131" selection-end="131" vertical-scroll-proportion="0.046116505">
+                  <folding />
+                </state>
               </provider>
             </entry>
           </file>
@@ -154,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/clubs_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin_users_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/access_controller.rb" />
@@ -170,6 +190,7 @@
         <option value="$PROJECT_DIR$/db/migrate/20130528135837_change_achievements_to_limit_string.rb" />
         <option value="$PROJECT_DIR$/Gemfile.lock" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130529104949_change_adminusers_salt_to_limit_64.rb" />
       </list>
     </option>
   </component>
@@ -235,6 +256,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ballyogan_celtic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ballyogan_celtic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -697,13 +736,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130324214253_create_players.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130325114852_create_expenses.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="43" selection-start="364" selection-end="364" vertical-scroll-proportion="0.24358974">
@@ -761,23 +793,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130528135250_change_achievements_to_limit_nil.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="27" selection-start="97" selection-end="118" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130528135837_change_achievements_to_limit_string.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="38" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="51" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -796,21 +814,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbElement:/7fcaacbd/9af168f7-4b55-4830-b9aa-dc176fe6b4fc/..admin_users">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin_users/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="17.714285">
-          <folding />
+          <folding>
+            <marker date="1364487749000" expanded="true" signature="108:394" placeholder="..." />
+            <marker date="1364487749000" expanded="true" signature="240:379" placeholder="..." />
+            <marker date="1364487749000" expanded="true" signature="433:527" placeholder="..." />
+            <marker date="1364487749000" expanded="true" signature="551:643" placeholder="..." />
+            <marker date="1364487749000" expanded="true" signature="667:757" placeholder="..." />
+            <marker date="1364487749000" expanded="true" signature="781:1325" placeholder="..." />
+            <marker date="1364487749000" expanded="true" signature="878:962" placeholder="..." />
+            <marker date="1364487749000" expanded="true" signature="986:1070" placeholder="..." />
+            <marker date="1364487749000" expanded="true" signature="1096:1314" placeholder="..." />
+            <marker date="1364487749000" expanded="true" signature="1349:1466" placeholder="..." />
+            <marker date="1364487749000" expanded="true" signature="1492:1525" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="519" column="41" selection-start="16126" selection-end="16126" vertical-scroll-proportion="0.7692308">
+        <state line="519" column="41" selection-start="16126" selection-end="16126" vertical-scroll-proportion="-21.923077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbElement:/7fcaacbd/9af168f7-4b55-4830-b9aa-dc176fe6b4fc/..admin_users">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="46" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130528135250_change_achievements_to_limit_nil.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="44" selection-start="147" selection-end="147" vertical-scroll-proportion="0.1948718">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130529104949_change_adminusers_salt_to_limit_64.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="60" selection-start="131" selection-end="131" vertical-scroll-proportion="0.046116505">
           <folding />
         </state>
       </provider>

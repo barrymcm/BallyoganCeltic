@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130528135837) do
+ActiveRecord::Schema.define(:version => 20130529104949) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "first_name",      :limit => 25
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20130528135837) do
     t.string   "email",           :limit => 25, :null => false
     t.string   "hashed_password", :limit => 64
     t.string   "username",        :limit => 25
-    t.string   "salt",            :limit => 25
+    t.string   "salt",            :limit => 64
     t.integer  "phone"
     t.string   "image"
     t.datetime "created_at",                    :null => false
