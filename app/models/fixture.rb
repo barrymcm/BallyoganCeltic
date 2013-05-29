@@ -10,10 +10,10 @@ class Fixture < ActiveRecord::Base
     where(["league_id => ? AND team_id => ?",
            "#{league}, #{team}"])}
 
-  scope :sort_snr, where(:league_id => 0)
-  scope :sort_17s, where(:league_id => 1)
-  scope :sort_15s, where(:league_id => 2)
-  scope :sort_12s, where(:league_id => 3)
+  scope :sort_snr, where(:league_id => 1)
+  scope :sort_17s, where(:league_id => 2)
+  scope :sort_15s, where(:league_id => 3)
+  scope :sort_12s, where(:league_id => 4)
 
   # Look at putting this into a module
   scope :sort_by_date, order("date DESC")
