@@ -17,7 +17,7 @@ Player.create(:team_id => 1,
               :description => "Height 6'2",
               :achievements => "League Winner 2011",
               :image_url => "17_goalkeeper.jpg",
-              :phone => '08766645344',
+              :phone => '087665344',
               :email => 'ger@email.com',
 )
 Player.create(:team_id => 1,
@@ -29,7 +29,7 @@ Player.create(:team_id => 1,
               :description => "Height 6'2",
               :achievements => "League Winner 2011",
               :image_url => "17_defender_1.jpg",
-              :phone => '08666645344',
+              :phone => '066645344',
               :email => 'ger@email.com',
 )
 
@@ -42,7 +42,7 @@ Player.create(:team_id => 1,
               :description => "Height 6'2",
               :achievements => "League Winner 2011",
               :image_url => "17_defender_2.jpg",
-              :phone => '08756645344',
+              :phone => '087645344',
               :email => 'greg@email.com',
 )
 
@@ -55,7 +55,7 @@ Player.create(:team_id => 1,
               :description => "Height 6'2",
               :achievements => "League Winner 2011",
               :image_url => "17_defender_3.jpg",
-              :phone => '08761645344',
+              :phone => '087645344',
               :email => 'ger@email.com',
 )
 
@@ -68,7 +68,7 @@ Player.create(:team_id => 1,
               :description => "Height 6'2",
               :achievements => "League Winner 2011",
               :image_url => "17_defender_4.jpg",
-              :phone => '08766145344',
+              :phone => '087661453',
               :email => 'ger@email.com',
 )
 
@@ -81,7 +81,7 @@ Player.create(:team_id => 1,
               :description => "Height 6'2",
               :achievements => "League Winner 2011",
               :image_url => "17_mid_1.jpg",
-              :phone => '08766625344',
+              :phone => '087666344',
               :email => 'ger@email.com',
 )
 
@@ -94,7 +94,7 @@ Player.create(:team_id => 1,
               :description => "Height 6'2",
               :achievements => "League Winner 2011",
               :image_url => "17_mid_2.jpg",
-              :phone => '08766649844',
+              :phone => '087669844',
               :email => 'ger@email.com',
 )
 
@@ -107,7 +107,7 @@ Player.create(:team_id => 1,
               :description => "Height 6'2",
               :achievements => "League Winner 2011",
               :image_url => "17_mid_3.jpg",
-              :phone => '08766645314',
+              :phone => '087645314',
               :email => 'ger@email.com',
 )
 
@@ -120,7 +120,7 @@ Player.create(:team_id => 1,
               :description => "Height 6'2",
               :achievements => "League Winner 2011",
               :image_url => "17_mid_4.jpg",
-              :phone => '08766645311',
+              :phone => '087665311',
               :email => 'ger@email.com',
 )
 
@@ -133,7 +133,7 @@ Player.create(:team_id => 1,
               :description => "Height 6'2",
               :achievements => "League Winner 2011",
               :image_url => "17_forward_1.jpg",
-              :phone => '08754645314',
+              :phone => '087545314',
               :email => 'ger@email.com',
 )
 
@@ -146,7 +146,7 @@ Player.create(:team_id => 1,
               :description => "Height 6'2",
               :achievements => "League Winner 2011",
               :image_url => "17_forward_2.jpg",
-              :phone => '08754105314',
+              :phone => '087541014',
               :email => 'ger@email.com',
 )
 
@@ -159,7 +159,7 @@ Player.create(:team_id => 1,
               :description => "Height 6'2",
               :achievements => "League Winner 2011",
               :image_url => "17_mid_5.jpg",
-              :phone => '08734105314',
+              :phone => '087345314',
               :email => 'ger@email.com',
 )
 
@@ -172,7 +172,7 @@ Player.create(:team_id => 1,
               :description => "Height 6'2",
               :achievements => "League Winner 2011",
               :image_url => "17_defender_5.jpg",
-              :phone => '08764105324',
+              :phone => '087641324',
               :email => 'ger@email.com',
 )
 Player.create(:team_id => 1,
@@ -184,7 +184,7 @@ Player.create(:team_id => 1,
               :description => "Height 6'2",
               :achievements => "League Winner 2011",
               :image_url => "17_defender_6.jpg",
-              :phone => '08764105329',
+              :phone => '087645329',
               :email => 'ger@email.com',
 )
 Player.create(:team_id => 1,
@@ -196,7 +196,7 @@ Player.create(:team_id => 1,
               :description => "Height 6'2",
               :achievements => "League Winner 2011",
               :image_url => "17_forward_4.jpg",
-              :phone => '08664105724',
+              :phone => '086641724',
               :email => 'ger@email.com',
 )
 
