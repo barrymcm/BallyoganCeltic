@@ -6,6 +6,8 @@ class PublicSiteController < ApplicationController
   before_filter :admin_user
   before_filter :contacts
 
+  require 'json'
+
   def home
     # The instance variables below get the content for the summary
     # table on the home page

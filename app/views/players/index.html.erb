@@ -9,12 +9,14 @@
 <table class="table table-striped">
   <thead>
     <tr>
+      <th><%= model_class.human_attribute_name(:team_id) %></th>
       <th><%= model_class.human_attribute_name(:first_name) %></th>
       <th><%= model_class.human_attribute_name(:last_name) %></th>
       <th><%= model_class.human_attribute_name(:dob) %></th>
       <th><%= model_class.human_attribute_name(:position) %></th>
-      <th><%= model_class.human_attribute_name(:squad_number) %></th>
+      <th><%= model_class.human_attribute_name(:goals) %></th>
       <th><%= model_class.human_attribute_name(:phone) %></th>
+      <th><%= model_class.human_attribute_name(:squad_number) %></th>
       <th><%= model_class.human_attribute_name(:email) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -22,12 +24,14 @@
   <tbody>
     <% @players.each do |player| %>
       <tr>
+        <td><%= player.team_id %></td>
         <td><%= player.first_name %></td>
         <td><%= player.last_name %></td>
         <td><%= player.dob %></td>
         <td><%= player.position %></td>
-        <td><%= player.squad_number %></td>
+        <td><%= player.goals %></td>
         <td><%= player.phone %></td>
+        <td><%= player.squad_number %></td>
         <td><%= player.email %></td>
         <td>
           <%= link_to t('.show', :default => t("helpers.links.show")),

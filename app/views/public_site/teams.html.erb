@@ -2,36 +2,51 @@
 </div>
 <div class="container-fluid">
   <div class="row-fluid">
-    <%= render(partial: "team_name") %>
+
     <div class="span9 well well-large pull-right">
       <div class="row-fluid">
-        <div id="played" class="span2 well">
-          <h5>Played</h5>
+
+        <div id="played" class="span4 well">
+          <h5>Games Played</h5>
           <% @games_played.each do |games| %>
               <%= games.played %>
           <% end %>
         </div>
-        <div class="span4 well">
+
+        <div id="topScorers" class="span4 well ">
           <h5>Top Scorers</h5>
           <ul class="unstyled">
+            <% # Arrays are used to create a JSON Object %>
+            <% fnames = [] %>
+            <% lnames = [] %>
+            <% goals = [] %>
             <% @top_scorers.each do |t| %>
-                <li><%= truncate(t.first_name, length: 2, omission: ".") %> <%= t.last_name %> - <%= t.goals %></li>
+                <%  fnames << truncate(t.first_name, length: 2, omission: ".")
+                    lnames << t.last_name
+                    goals << t.goals %>
             <% end %>
+            <% # Creates a dynamic JSON Object %>
+            <% top_scorer = "{ \"first_names\" : #{fnames}, \"last_names\" : #{lnames}, \"goals\" : #{goals} }" %>
+            <li><%= raw(top_scorer) %></li>
           </ul>
+          <div id="top_scorers" style="width:100%; height:100%;">High Charts</div>
         </div>
-        <div class="span3 well">
+
+        <!--<div id="honours" class="span3 well">
           <h5>Honours</h5>
           <ul class="unstyled">
-            <% @achievements.each do |a| %>
-                <li><%= a.achievements %></li>
-            <% end %>
+             #@achievements.each do |a| %>
+                <li> #a.achievements %></li>
+             #end %>
           </ul>
-        </div>
-        <div class="span3 well">
+        </div>-->
+
+        <div id="plyroyr" class="span3 well">
           <ul class="unstyled">
             <h5>Player of the Year</h5>
             <% @player_award.each do |award| %>
                 <% if award.team_id == params[:team_id].to_i %>
+                    <li><%= image_tag(award.image_url) %></li>
                     <li><%= truncate(award.first_name, length: 2, omission: ".") %> <%= award.last_name %></li>
                     <li>Played: <%= award.played %></li>
                     <li>Goals: <%= award.goals %></li>
