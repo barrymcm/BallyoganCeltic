@@ -145,7 +145,7 @@ $(document).ready(function () {
 
     console.log(totalPlayed.total_played);
 
-    $('#played ul li').hide();
+    //$('#played ul li').hide();
 
     $('#total_played').highcharts({
 
