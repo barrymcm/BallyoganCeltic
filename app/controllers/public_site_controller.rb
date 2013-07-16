@@ -73,6 +73,8 @@ class PublicSiteController < ApplicationController
 
     @player_award = Player.where(:achievements => "Player of the Year")
 
+    @fixtures
+
   end
 
   def fixtures

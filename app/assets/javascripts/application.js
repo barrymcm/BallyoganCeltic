@@ -72,10 +72,6 @@ $(document).ready(function () {
 
     var topScorers = JSON.parse(topScorersObject);
 
-    var string = 'barry';
-
-    console.log(string.substr(0, 1));
-
     /*var i = 0;
      // Wont work because the goals are not being rendered on the page
      for(var i; i < goals.length; i++){
@@ -90,13 +86,14 @@ $(document).ready(function () {
             borderWeight: 2,
             borderColor: '#228B22',
             spacingTop: 30,
-            spacingBottom: 25
+            spacingBottom: 25,
+            height: 250
         },
         credits:{
             enabled: false
         },
         title:{
-            text:null
+            text:'Top Scorers'
         },
         tooltip: {
             useHTML: true,
@@ -117,7 +114,7 @@ $(document).ready(function () {
         },
         yAxis:{
             title: null,
-            tickInterval: 2,
+            tickInterval: 5,
             minorTickInterval: 1
         },
         legend: {
@@ -140,65 +137,56 @@ $(document).ready(function () {
     });
 
 
-    $('#played').highcharts({
+    var totalPlayedObject = $('#played ul li').text();
+
+    console.log(totalPlayedObject);
+
+    var totalPlayed = JSON.parse(totalPlayedObject);
+
+    console.log(totalPlayed.total_played);
+
+    $('#played ul li').hide();
+
+    $('#total_played').highcharts({
 
         chart:{
-            type:'column',
-            plotBorderWidth:2,
-            plotBackgroundColor:'#D6D6EB',
-            plotBorderColor:'#D8D8D8',
-            plotShadow:true,
-            spacingBottom:15,
-            height:350
+            type:'pie',
+            borderWidth: 3,
+            borderWeight: 2,
+            borderColor: '#228B22',
+            spacingTop: 30,
+            spacingBottom: 25,
+            height: 250
         },
         title:{
-            text: null
+            text: 'Seasons Games'
+        },
+        legend: {
+            align: 'center',
+            layout: 'horizontal',
+            verticalAlign: 'top',
+            itemMarginBottom: 4,
+            itemMarginTop: 4,
+            x:0,
+            y:30
         },
         credits:{
             enabled: false
         },
-        legend: {
-            enabled: false
-        },
-        xAxis: {
-            categories: [ 'Games Played' ],
-            tickLength: 0
-        },
-        yAxis: {
-            title: {
-                text: null
-            },
-            labels: {
-                y: 5,
-                x: 15
-            },
-            min: 0,
-            max: 100,
-            tickInterval: 20,
-            minorTickInterval: 10,
-            tickWidth: 1,
-            tickLength: 8,
-            minorTickLength: 5,
-            minorTickWidth: 1,
-            minorGridLineWidth: 0
+        plotOptions: {
+            pie: {
+                showInLegend: true,
+                dataLabels: {
+                    distance: -15,
+                    color: 'white',
+                    style: {
+                        fontWeight: 'bold'
+                    }
+                }
+            }
         },
         series: [{
-            borderColor: '#7070B8',
-            borderRadius: 3,
-            borderWidth: 1,
-            color: {
-                linearGradient:
-                { x1: 0, y1: 0, x2: 1, y2: 0 },
-                stops: [
-                    [ 0, '#D6D6EB' ],
-                    [ 0.3, '#5C5CAD' ],
-                    [ 0.45, '#5C5C9C' ],
-                    [ 0.55, '#5C5C9C' ],
-                    [ 0.7, '#5C5CAD' ],
-                    [ 1, '#D6D6EB'] ]
-            },
-            pointWidth: 50,
-            data: [ 48.9 ]
+            data: [15,3]
         }]
     });
 });

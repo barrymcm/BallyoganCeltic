@@ -10,10 +10,10 @@ class Result < ActiveRecord::Base
     where(["home_team => ? OR away_team => ?",
            "#{home_team}, #{away_team}"])}
 
-  scope :sort_snr, where(:league_id => 1)
-  scope :sort_17s, where(:league_id => 2)
-  scope :sort_15s, where(:league_id => 3)
-  scope :sort_12s, where(:league_id => 4)
+  scope :sort_snr, where(:league_id => 0)
+  scope :sort_17s, where(:league_id => 1)
+  scope :sort_15s, where(:league_id => 2)
+  scope :sort_12s, where(:league_id => 3)
 
   # Look at putting this into a module
   scope :sort_by_date, order('date DESC')
