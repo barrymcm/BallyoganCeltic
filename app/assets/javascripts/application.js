@@ -15,14 +15,17 @@
 //= require twitter/bootstrap
 //= require_tree .
 
-
 $(document).ready(function () {
 
     $(".thumbnail").on("click", function () {
         $("#info_container").show();
     });
 
-    $("div a").on("click", function () {
+   // to get the nav tabs to highlight the currently active tab
+   // the active property needs to be set as the tab is clicked
+   // and the inactive tabs need to be inactive.
+
+   /* $("div a").on("click", function () {
         $("#info_container").hide();
     });
 
@@ -34,7 +37,7 @@ $(document).ready(function () {
     $('#myTab a').click(function (e) {
         e.preventDefault();
         $(this).tab('show');
-    })
+    })*/
 
     !function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0],
@@ -47,7 +50,6 @@ $(document).ready(function () {
             fjs.parentNode.insertBefore(js, fjs);
         }
     }(document, "script", "twitter-wjs");
-
 
     //    $(".nav > li").on("click", function(){
 //        $(".nav-pills > li.focus").addClass("active");
@@ -79,114 +81,133 @@ $(document).ready(function () {
      console.log(scores);
      }*/
 
+    // Bar Chart
+
     $('#top_scorers').highcharts({
         chart:{
             type:'column',
-            borderWidth: 3,
-            borderWeight: 2,
-            borderColor: '#228B22',
-            spacingTop: 30,
-            spacingBottom: 25,
-            height: 250
+            borderWidth:3,
+            borderWeight:2,
+            borderColor:'#228B22',
+            spacingTop:30,
+            spacingBottom:25,
+            height:250
         },
         credits:{
-            enabled: false
+            enabled:false
         },
         title:{
             text:'Top Scorers'
         },
-        tooltip: {
-            useHTML: true,
-            headerFormat: '<table><thead> <tr>' +
+        tooltip:{
+            useHTML:true,
+            headerFormat:'<table><thead> <tr>' +
                 '<th style="border-bottom: 2px solid #6678b1; color:#039;" >{point.key}</th></tr></thead>',
-            pointFormat: '<tbody><tr><td style="color: {series.color}">{series.name}: </td>' +
+            pointFormat:'<tbody><tr><td style="color: {series.color}">{series.name}: </td>' +
                 '<td><b>{point.y}</b></td></tr></tbody>',
-            footerFormat: '</table>'
+            footerFormat:'</table>'
         },
         xAxis:{
-            categories: topScorers.last_names,
+            categories:topScorers.last_names,
             labels:{
                 rotation:-55,
                 x:5,
                 y:15,
-                align: 'right'
+                align:'right'
             }
         },
         yAxis:{
-            title: null,
-            tickInterval: 5,
-            minorTickInterval: 1
+            title:null,
+            tickInterval:5,
+            minorTickInterval:1
         },
-        legend: {
-            enabled: false,
-            VerticalAlign: 'bottom',
-            layout: 'vertical'
+        legend:{
+            enabled:false,
+            VerticalAlign:'bottom',
+            layout:'vertical'
         },
         plotOptions:{
             column:{
-                colorByPoint: true
+                colorByPoint:true
             }
         },
         series:[
             {
                 name:"Goals",
-                data: topScorers.goals
+                data:topScorers.goals
                 // showInLegend: true
             }
         ]
     });
 
+    // Pie Chart
 
     var totalPlayedObject = $('#played ul li').text();
 
-    console.log(totalPlayedObject);
+    $('#played ul li').hide();
 
     var totalPlayed = JSON.parse(totalPlayedObject);
 
-    console.log(totalPlayed.total_played);
+    var match_pl = totalPlayed.matches_played;
 
-    //$('#played ul li').hide();
+    var total_fix = totalPlayed.total_fixtures;
+
+    var remaining_games = total_fix - match_pl;
+
+    /*$('#total_played').highcharts({
+        chart:{
+            type:'pie'
+        },
+
+        xAxis:{
+            categories:['Green', 'Pink']
+        },
+
+        series:[
+            {
+                data:[
+                    {
+                        color:'#00FF00',
+                        y:console.log(match_pl)
+                    },
+                    {
+                        color:'#FF00FF',
+                        y:console.log(remaining_games)
+                    }
+                ]
+            }
+        ]
+    });*/
 
     $('#total_played').highcharts({
 
         chart:{
             type:'pie',
-            borderWidth: 3,
-            borderWeight: 2,
-            borderColor: '#228B22',
-            spacingTop: 30,
-            spacingBottom: 25,
-            height: 250
+            borderWidth:3,
+            borderWeight:2,
+            borderColor:'#228B22',
+            spacingTop:30,
+            spacingBottom:25,
+            height:250
         },
         title:{
-            text: 'Seasons Games'
+            text:'Matches'
         },
-        legend: {
-            align: 'center',
-            layout: 'horizontal',
-            verticalAlign: 'top',
-            itemMarginBottom: 4,
-            itemMarginTop: 4,
-            x:0,
-            y:30
+        legend:{
+            align:'center',
+            layout:'horizontal',
+            verticalAlign:'top',
+            itemMarginBottom:4,
+            itemMarginTop:4
         },
-        credits:{
-            enabled: false
-        },
-        plotOptions: {
-            pie: {
-                showInLegend: true,
-                dataLabels: {
-                    distance: -15,
-                    color: 'white',
-                    style: {
-                        fontWeight: 'bold'
-                    }
-                }
-            }
-        },
-        series: [{
-            data: [15,3]
+        series:[{
+            data: [{
+                name: 'Played',
+                y: parseInt(match_pl)
+            }, {
+                name: 'Remaining',
+                y: parseInt(remaining_games)
+            }]
         }]
     });
 });

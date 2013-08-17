@@ -1,5 +1,6 @@
 class PublicSiteController < ApplicationController
 
+  include ActionView::Helpers::TextHelper
   layout "public_layout"
 
   before_filter :league_title
@@ -60,20 +61,86 @@ class PublicSiteController < ApplicationController
 
     @players = Player.where(:team_id => params[:team_id])
     @managers = Manager.where(:team_id => params[:team_id])
-
     @games_played = Team.where(:id => params[:team_id])
 
-    @top_scorers = Player.select("first_name, last_name, goals")
-                            .where(:team_id => params[:team_id])
-                            .top_scorers.limit(3)
+    @top_scorers = Player.select("first_name, last_name, goals").where(:team_id => params[:team_id]).top_scorers.limit(3)
 
     @achievements = Team.select("achievements").where(:id => params[:team_id])
-
     @team_name = Team.select("name").where(:id => params[:team_id])
-
     @player_award = Player.where(:achievements => "Player of the Year")
 
-    @fixtures
+    # Highcharts - Pie chart data
+
+    # Arrays are used to create a JSON Object
+    matches = []
+    team_id = []
+    won = []
+    lost = []
+    drawn = []
+    league_id = []
+    total_clubs = []
+
+    @total_clubs = Club.all
+
+    @total_clubs.each do |c|
+        total_clubs << c.league_id
+    end
+
+    # Selects the league ids of all the clubs in the clubs table
+    # and stores the in an array
+    club_count = total_clubs.select {|c| c }
+
+    @team_stats = Team.where(:id => params[:team_id])
+
+    @team_stats.each do |p|
+      team_id << p.id
+      won << p.won
+      lost << p.lost
+      drawn << p.drawn
+      matches << p.played
+      league_id << p.league_id
+    end
+
+    # Selects the league id of the current team selected
+
+    # This is here because the @team_stats iterator must be run to define the
+    # first value in the league_id
+    club_count.keep_if {|c| c == league_id.first}
+
+    # counts the number of clubs in the league and subtracts ballyogan from
+    # so that the total number of fixtures for ballyogan can be calculated.
+    # Ballyogan plays every team in the league 2 times so 2 * number of clubs in
+    # the league gives the total fixtures
+    total_fixtures = club_count.count - 1
+
+    # Creates a dynamic JSON Object %>
+    @season_totals = "{ \"team_id\": #{team_id},
+                        \"won\": #{won},
+                        \"lost\": #{lost},
+                        \"drawn\": #{drawn},
+                        \"matches_played\": #{matches},
+                        \"league_id\": #{league_id},
+                        \"total_fixtures\": #{total_fixtures * 2}
+                       }"
+
+    # Highcharts - Bar chart data
+
+    # Arrays are used to create a JSON Object
+    fnames = []
+    lnames = []
+    goals = []
+
+    @top_scorers.each do |t|
+      fnames << truncate(t.first_name, length: 2, omission: ".")
+      lnames << t.last_name
+      goals << t.goals
+    end
+
+    # Creates a dynamic JSON Object
+    @top_scorer = "{ \"first_names\" : #{fnames},
+                     \"last_names\" : #{lnames},
+                     \"goals\" : #{goals}
+                   }"
 
   end
 
@@ -81,7 +148,8 @@ class PublicSiteController < ApplicationController
     @json = Location.all.to_gmaps4rails
 
     if params[:league_id].blank?
-      @fixtures = Fixture.sort_by_date
+      # Default setting for fixture displays
+      @fixtures = Fixture.sort_snr.sort_by_date
     else
       @fixtures = Fixture.where(:league_id => params[:league_id]).sort_by_date
     end

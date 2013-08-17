@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c94b123-9e11-4dd5-8583-98771bb83b5d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/public_site_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/public_site_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/fixture.rb" afterPath="$PROJECT_DIR$/app/models/fixture.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/public_site/teams.html.erb" afterPath="$PROJECT_DIR$/app/views/public_site/teams.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_nav_fixtures.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_nav_fixtures.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_nav_leagues.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_nav_leagues.html.erb" />
     </list>
     <ignored path="ballyogan_celtic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,45 +30,34 @@
     <groupTables value="false" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.55987793">
       <split-first>
         <leaf>
           <file leaf-file-name="teams.html.erb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/public_site/teams.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="37" column="65" selection-start="1490" selection-end="1490" vertical-scroll-proportion="-16.964285">
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="46.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="public_site_controller.rb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="public_site_controller.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/controllers/public_site_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="76" column="0" selection-start="2151" selection-end="2151" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="e#183#1158#0" expanded="false" />
-                  </folding>
+                <state line="53" column="0" selection-start="1383" selection-end="1383" vertical-scroll-proportion="-1.6868064">
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
+          <file leaf-file-name="..clubs" pinned="false" current="false" current-in-tab="false">
+            <entry file="dbDummy://dbElement:/7fcaacbd/9af168f7-4b55-4830-b9aa-dc176fe6b4fc/..clubs">
+              <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+                <state />
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="team.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/models/team.rb">
               <provider selected="true" editor-type-id="text-editor">
@@ -73,11 +67,33 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="fixtures.html.erb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/public_site/fixtures.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <marker date="1369421229000" expanded="true" signature="322:1205" placeholder="..." />
+                    <marker date="1369421229000" expanded="true" signature="334:632" placeholder="..." />
+                    <marker date="1369421229000" expanded="true" signature="343:619" placeholder="..." />
+                    <marker date="1369421229000" expanded="true" signature="699:1180" placeholder="..." />
+                    <marker date="1369421229000" expanded="true" signature="829:1078" placeholder="..." />
+                    <marker date="1369421229000" expanded="true" signature="1222:1257" placeholder="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
           <file leaf-file-name="_admin_navbar.html.erb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/layouts/_admin_navbar.html.erb">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-                  <folding />
+                  <folding>
+                    <marker date="1369585629000" expanded="true" signature="62:536" placeholder="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -100,15 +116,13 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="147" column="6" selection-start="4292" selection-end="4292" vertical-scroll-proportion="1.2577065">
+                <state line="213" column="0" selection-start="5852" selection-end="5852" vertical-scroll-proportion="4.6387177">
                   <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                    <element signature="e#2384#2582#0" expanded="false" />
-                    <marker date="1373937558000" expanded="false" signature="3087:3132" placeholder="..." />
-                    <marker date="1373937558000" expanded="false" signature="3215:3236" placeholder="..." />
+                    <marker date="1375487403000" expanded="false" signature="3275:3320" placeholder="..." />
+                    <marker date="1375487403000" expanded="false" signature="3402:3423" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -132,20 +146,20 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/shared/_register_navbar.html.erb" />
         <option value="$PROJECT_DIR$/app/models/club.rb" />
-        <option value="$PROJECT_DIR$/app/models/fixture.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/highcharts.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/admin_layout.html.erb" />
         <option value="$PROJECT_DIR$/app/views/public_site/results.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_nav_fixtures.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_team_name.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/public_layout.html.erb" />
         <option value="$PROJECT_DIR$/app/views/players/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/public_site_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/result.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/_nav_results.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_nav_leagues.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_nav_fixtures.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/fixture.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/public_site_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/public_site/teams.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       </list>
@@ -159,7 +173,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="31" />
+    <option name="x" value="7" />
     <option name="y" value="22" />
     <option name="width" value="1889" />
     <option name="height" value="970" />
@@ -190,6 +204,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -205,6 +220,86 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ballyogan_celtic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ballyogan_celtic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ballyogan_celtic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ballyogan_celtic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ballyogan_celtic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ballyogan_celtic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ballyogan_celtic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ballyogan_celtic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ballyogan_celtic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -243,20 +338,19 @@
         </subPane>
       </pane>
       <pane id="RailsProjectView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Database.TableEditor.Splitter" value="0.8999999" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/access" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -559,14 +653,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="22" width="1889" height="970" extended-state="0" />
+    <frame x="7" y="22" width="1889" height="970" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12371134" sideWeight="0.6701031" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12371134" sideWeight="0.6701031" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16332068" sideWeight="0.6701031" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17145957" sideWeight="0.6701031" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -635,47 +729,86 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_public_navbar.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/access_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="226" selection-end="249" vertical-scroll-proportion="-0.09706258" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0073982" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/public_layout.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="44" selection-start="488" selection-end="488" vertical-scroll-proportion="0.12411348">
+        <state line="36" column="25" selection-start="1469" selection-end="1481" vertical-scroll-proportion="0.53895277" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/fixtures_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="40" selection-start="330" selection-end="330" vertical-scroll-proportion="0.32799014" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/fixture.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="43" selection-start="356" selection-end="605" vertical-scroll-proportion="0.41504854" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_nav_leagues.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="65" selection-start="315" selection-end="315" vertical-scroll-proportion="0.09290954" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/team.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="24" selection-start="576" selection-end="576" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_nav_fixtures.html.erb">
+    <entry file="dbDummy://dbElement:/7fcaacbd/9af168f7-4b55-4830-b9aa-dc176fe6b4fc/..teams">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbElement:/7fcaacbd/9af168f7-4b55-4830-b9aa-dc176fe6b4fc/..fixtures">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbElement:/7fcaacbd/9af168f7-4b55-4830-b9aa-dc176fe6b4fc/..clubs">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/public_site/fixtures.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="358" selection-end="358" vertical-scroll-proportion="0.18581907">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1369421229000" expanded="true" signature="322:1205" placeholder="..." />
+            <marker date="1369421229000" expanded="true" signature="334:632" placeholder="..." />
+            <marker date="1369421229000" expanded="true" signature="343:619" placeholder="..." />
+            <marker date="1369421229000" expanded="true" signature="699:1180" placeholder="..." />
+            <marker date="1369421229000" expanded="true" signature="829:1078" placeholder="..." />
+            <marker date="1369421229000" expanded="true" signature="1222:1257" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/public_site/teams.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="46.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/admin_layout.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_admin_navbar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="41" selection-start="116" selection-end="116" vertical-scroll-proportion="0.023602484">
-          <folding />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1369585629000" expanded="true" signature="62:536" placeholder="..." />
+          </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="223" column="0" selection-start="3370" selection-end="3370" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.3662145">
           <folding />
         </state>
       </provider>
@@ -687,67 +820,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/result.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="40" selection-start="588" selection-end="588" vertical-scroll-proportion="0.351418">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/public_layout.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="31" selection-start="380" selection-end="389" vertical-scroll-proportion="0.24265645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbElement:/7fcaacbd/9af168f7-4b55-4830-b9aa-dc176fe6b4fc/..leagues">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_nav_results.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="65" selection-start="315" selection-end="315" vertical-scroll-proportion="0.094409935">
-          <folding />
+        <state line="213" column="0" selection-start="5852" selection-end="5852" vertical-scroll-proportion="4.6387177">
+          <folding>
+            <marker date="1375487403000" expanded="false" signature="3275:3320" placeholder="..." />
+            <marker date="1375487403000" expanded="false" signature="3402:3423" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/public_site_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="2151" selection-end="2151" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#183#1158#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/public_site/teams.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="65" selection-start="1490" selection-end="1490" vertical-scroll-proportion="-16.964285">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="53" column="0" selection-start="1383" selection-end="1383" vertical-scroll-proportion="-1.6868064">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="6" selection-start="4292" selection-end="4292" vertical-scroll-proportion="1.2577065">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#2384#2582#0" expanded="false" />
-            <marker date="1373937558000" expanded="false" signature="3087:3132" placeholder="..." />
-            <marker date="1373937558000" expanded="false" signature="3215:3236" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
